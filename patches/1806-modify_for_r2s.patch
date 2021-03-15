@@ -1,3 +1,6 @@
+# Modify default IP
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
+
 diff --git a/include/target.mk b/include/target.mk
 index 530e711fa5..6e5054b04d 100644
 --- a/include/target.mk
